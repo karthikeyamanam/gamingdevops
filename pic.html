@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website - DevOps Lifecycle</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #222, #444);
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .lifecycle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .stage {
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 50px;
+            width: 60%;
+            text-align: center;
+            margin: 15px 0;
+            position: relative;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .stage:hover {
+            transform: scale(1.03);
+        }
+
+        /* Color coding each stage */
+        .plan { background: #f28b82; }
+        .develop { background: #a7d9a8; }
+        .build { background: #ffe59d; }
+        .test { background: #a0c4ff; }
+        .release { background: #d7aefb; }
+        .deploy { background: #aecbfa; }
+        .operate { background: #fbcfe8; }
+        .monitor { background: #e6e6e6; }
+
+        /* Arrows between stages */
+        .stage::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background: #555;
+        }
+
+        .stage:last-child::after {
+            display: none;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #222;
+        }
+
+        p {
+            margin: 5px 0 0;
+            font-size: 0.95rem;
+            color: #222;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .stage {
+                width: 90%;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DevOps Lifecycle - Gaming Website Development</h1>
+    </header>
+
+    <div class="lifecycle">
+        <div class="stage plan">
+            <h2>Plan</h2>
+            <p>Defined project goals: immersive video backgrounds, product showcases, animations, and responsive layout.</p>
+        </div>
+
+        <div class="stage develop">
+            <h2>Develop</h2>
+            <p>Wrote HTML, CSS, and JS; integrated Cloudinary-hosted assets; added interactive sections and animations.</p>
+        </div>
+
+        <div class="stage build">
+            <h2>Build</h2>
+            <p>Optimized media, minified code, and prepared deployment-ready files.</p>
+        </div>
+
+        <div class="stage test">
+            <h2>Test</h2>
+            <p>Tested across devices/browsers, checked animations, video performance, and responsive design.</p>
+        </div>
+
+        <div class="stage release">
+            <h2>Release</h2>
+            <p>Approved the final version and prepared server/domain settings for launch.</p>
+        </div>
+
+        <div class="stage deploy">
+            <h2>Deploy</h2>
+            <p>Uploaded files to GoDaddy/InfinityFree hosting and verified all live links & videos.</p>
+        </div>
+
+        <div class="stage operate">
+            <h2>Operate</h2>
+            <p>Ensured smooth live performance and monitored uptime and user experience.</p>
+        </div>
+
+        <div class="stage monitor">
+            <h2>Monitor</h2>
+            <p>Analyzed analytics, load times, and user feedback for continuous improvement.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Gaming Website Project. All rights reserved.
+    </footer>
+</body>
+</html>
